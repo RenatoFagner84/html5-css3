@@ -1,2 +1,4 @@
 # html5-css3
- Estudos frontend
+ Curso de frontend @cursoemvideo
+
+ Agora vou aprender a gerenciar meus arquivos .
