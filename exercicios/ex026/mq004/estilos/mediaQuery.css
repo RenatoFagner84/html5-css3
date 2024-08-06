@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+/*Todas as versões*/
+
+/*Impressora*/
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);/*Desnecessário*/
+
+    }
+    main {
+        border: 2px solid black;
+
+    }
+    main h1{
+        color: black;
+        box-shadow: none;
+    }
+    main::after{
+        content:'Essa impressão foi do cursoemvideo!' ;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+}
+
+
+/* Dispositivos médios (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+
+
+
+}
+
+/* Dispositivos grandes (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/* Dipositivos extra grande (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
