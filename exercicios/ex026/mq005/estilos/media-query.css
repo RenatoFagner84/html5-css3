@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Breakpoints Comuns:
+Dispositivos Pequenos (Celulares)
+
+320px: Telefone pequeno
+375px: iPhone SE, iPhone 8
+414px: iPhone 11 Pro Max, iPhone 12 Pro Max
+Dispositivos Médios (Tablets)
+
+768px: iPad, tablets de 7 a 8 polegadas em modo retrato
+1024px: iPad em modo paisagem, tablets de 9 a 10 polegadas em modo retrato
+Dispositivos Grandes (Desktops e Laptops)
+
+1280px: Laptops pequenos
+1366px: Laptops padrão
+1440px: Monitores widescreen de 15" a 17"
+1600px: Monitores grandes
+1920px: Monitores widescreen de 24", Full HD
+2560px: Monitores 2K, alta resolução
+Dispositivos Extra Grandes (Monitores 4K e Ultrawide)
+
+3840px: Monitores 4K
+4096px: Monitores Ultra HD
+5120px: Monitores 5K, Ultrawide*/
+
+@media screen and (min-width:768px) {
+    i#burguer{
+        display: none;
+    }
+    menu{
+        display:block;
+    }
+    menu ul > li {
+        display: inline-block;
+        width:100px;
+        padding: 10px;
+        margin: 14px;
+    }
+}
